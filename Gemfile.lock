@@ -1,0 +1,171 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    ansi (1.5.0)
+    buftok (0.2.0)
+    capybara (3.32.2)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      regexp_parser (~> 1.5)
+      xpath (~> 3.2)
+    childprocess (3.0.0)
+    curb (0.9.10)
+    daemons (1.3.1)
+    data_objects (0.10.17)
+      addressable (~> 2.1)
+    dm-core (1.2.1)
+      addressable (~> 2.3)
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
+    dm-migrations (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-sqlite-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_sqlite3 (~> 0.10.6)
+    do_sqlite3 (0.10.17)
+      data_objects (= 0.10.17)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    equalizer (0.0.11)
+    erubis (2.7.0)
+    eventmachine (1.2.7)
+    ffi (1.13.1)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
+    http (4.4.1)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    http-parser (1.2.1)
+      ffi-compiler (>= 1.0, < 2.0)
+    http_parser.rb (0.6.0)
+    jar_wrapper (0.1.8)
+      zip
+    jsmin (1.0.1)
+    json (2.3.0)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    mime-types (1.25.1)
+    mini_mime (1.0.2)
+    mini_portile2 (2.4.0)
+    msfrpc-client (1.1.2)
+      msgpack (~> 1)
+    msgpack (1.3.3)
+    multipart-post (2.1.1)
+    naught (1.1.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
+    parseconfig (1.0.8)
+    power_assert (1.2.0)
+    public_suffix (4.0.5)
+    rack (1.6.13)
+    rack-protection (1.5.5)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rake (13.0.1)
+    regexp_parser (1.7.1)
+    rest-client (1.6.14)
+      mime-types (~> 1.16)
+    rr (1.2.1)
+    rubyzip (2.3.0)
+    selenium (0.2.11)
+      jar_wrapper
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
+    simple_oauth (0.3.1)
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    sync (0.5.0)
+    term-ansicolor (1.7.1)
+      tins (~> 1.0)
+    test-unit (3.3.6)
+      power_assert
+    test-unit-context (0.5.1)
+      test-unit (>= 2.4.0)
+    test-unit-full (0.0.5)
+      test-unit
+      test-unit-context
+      test-unit-notify
+      test-unit-rr
+      test-unit-runner-tap
+    test-unit-notify (1.0.4)
+      test-unit (>= 2.4.9)
+    test-unit-rr (1.0.5)
+      rr (>= 1.1.1)
+      test-unit (>= 2.5.2)
+    test-unit-runner-tap (1.1.2)
+      test-unit
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    thread_safe (0.3.6)
+    tilt (1.4.1)
+    tins (1.25.0)
+      sync
+    twitter (7.0.0)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      equalizer (~> 0.0.11)
+      http (~> 4.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+      memoizable (~> 0.4.0)
+      multipart-post (~> 2.0)
+      naught (~> 1.0)
+      simple_oauth (~> 0.3.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
+    zip (2.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ansi
+  capybara
+  curb
+  data_objects
+  dm-core
+  dm-migrations
+  dm-sqlite-adapter
+  em-websocket
+  erubis
+  eventmachine
+  jsmin (~> 1.0.1)
+  json
+  msfrpc-client
+  parseconfig
+  rest-client (~> 1.6.7)
+  selenium
+  selenium-webdriver
+  sinatra (= 1.3.2)
+  term-ansicolor
+  test-unit
+  test-unit-full
+  thin
+  twitter
+
+BUNDLED WITH
+   2.1.4
